@@ -4,161 +4,188 @@
 
 body {
     margin: 0;
-    background: #eeeeee;
-    color: #111111;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.45;
+    background: #f6f6f6;
+    color: #111;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-.page {
-    max-width: 850px;
-    margin: 32px auto;
-    background: #ffffff;
-    padding: 40px;
-    border: 1px solid #111111;
+.cv {
+    max-width: 920px;
+    margin: 28px auto;
+    padding: 34px;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
-.top {
+.hero {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
-    border-bottom: 2px solid #111111;
-    padding-bottom: 20px;
-    margin-bottom: 24px;
+    gap: 32px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #111;
 }
 
-.label {
-    margin: 0 0 8px;
-    font-size: 13px;
-    text-transform: uppercase;
+.eyebrow {
+    margin: 0 0 10px;
+    font-size: 12px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #555;
 }
 
 h1 {
     margin: 0;
-    font-size: 42px;
-    line-height: 1;
-    letter-spacing: -1.5px;
+    font-size: 54px;
+    line-height: 0.95;
+    letter-spacing: -3px;
 }
 
-.title {
-    margin: 10px 0 0;
-    font-size: 16px;
+.subtitle {
+    max-width: 570px;
+    margin: 14px 0 0;
+    font-size: 18px;
+    color: #333;
 }
 
-.contact {
-    text-align: right;
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 130px;
+}
+
+.actions a,
+button {
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    padding: 9px 12px;
+    text-align: center;
+    text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
 }
 
-.contact p {
-    margin: 0 0 7px;
+.actions a:hover,
+button:hover {
+    background: #fff;
+    color: #111;
 }
 
 section {
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-}
-
-section:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding: 22px 0;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 h2 {
-    margin: 0 0 9px;
-    font-size: 14px;
+    margin: 0 0 12px;
+    font-size: 13px;
+    letter-spacing: 1.7px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-h3 {
-    margin: 12px 0 4px;
-    font-size: 17px;
 }
 
 p {
-    margin: 0 0 8px;
+    margin: 0;
 }
 
-.grid {
+.intro p {
+    max-width: 760px;
+    font-size: 17px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills span {
+    padding: 7px 10px;
+    border: 1px solid #111;
+    font-size: 14px;
+    background: #fff;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    padding: 16px 0;
+    border-top: 1px solid #eee;
+}
+
+.project:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.meta {
+    font-size: 13px;
+    color: #666;
+}
+
+.split {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4px 28px;
+    gap: 32px;
 }
 
-article {
-    margin-bottom: 10px;
+footer {
+    padding-top: 18px;
+    font-size: 13px;
+    color: #555;
 }
 
-a {
-    color: #111111;
-    text-decoration: none;
-    border-bottom: 1px solid #111111;
-}
-
-a:hover {
-    background: #111111;
-    color: #ffffff;
-}
-
-button {
-    margin-top: 8px;
-    background: #111111;
-    color: #ffffff;
-    border: 1px solid #111111;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-button:hover {
-    background: #ffffff;
-    color: #111111;
-}
-
-@media (max-width: 700px) {
-    .page {
+@media (max-width: 720px) {
+    .cv {
         margin: 0;
         padding: 24px;
         border: none;
     }
 
-    .top {
-        flex-direction: column;
-    }
-
-    .contact {
-        text-align: left;
-    }
-
-    .grid {
+    .hero,
+    .split {
         grid-template-columns: 1fr;
+        display: grid;
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 42px;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
 @media print {
     body {
-        background: #ffffff;
+        background: #fff;
     }
 
-    .page {
+    .cv {
         margin: 0;
         border: none;
-        padding: 20px;
     }
 
     button {
         display: none;
     }
 
-    a {
-        border-bottom: none;
+    .actions a {
+        background: #fff;
+        color: #111;
     }
 }
