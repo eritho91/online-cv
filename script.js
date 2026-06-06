@@ -1,11 +1,5 @@
-const themeButton = document.getElementById("themeButton");
+const printButton = document.getElementById("printButton");
 
-themeButton.addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-        themeButton.textContent = "Ljust tema";
-    } else {
-        themeButton.textContent = "Mörkt tema";
-    }
+printButton.addEventListener("click", function () {
+    window.print();
 });
