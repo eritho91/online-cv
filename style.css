@@ -4,188 +4,271 @@
 
 body {
     margin: 0;
-    background: #f6f6f6;
-    color: #111;
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    background: #070707;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
-.cv {
-    max-width: 920px;
-    margin: 28px auto;
-    padding: 34px;
-    background: #fff;
-    border: 1px solid #ddd;
+.site {
+    width: min(1180px, calc(100% - 32px));
+    margin: 32px auto;
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #111;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    background: linear-gradient(135deg, #151515, #252525);
+    border: 1px solid #333;
+    border-radius: 28px;
+    padding: 56px;
 }
 
 .eyebrow {
-    margin: 0 0 10px;
-    font-size: 12px;
-    letter-spacing: 2px;
+    margin: 0 0 16px;
+    color: #bdbdbd;
+    font-size: 13px;
     text-transform: uppercase;
-    color: #555;
+    letter-spacing: 2px;
 }
 
 h1 {
     margin: 0;
-    font-size: 54px;
-    line-height: 0.95;
-    letter-spacing: -3px;
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 0.9;
+    letter-spacing: -5px;
 }
 
 .subtitle {
-    max-width: 570px;
-    margin: 14px 0 0;
-    font-size: 18px;
-    color: #333;
+    max-width: 760px;
+    margin: 24px 0 0;
+    color: #e8e8e8;
+    font-size: 22px;
 }
 
-.actions {
+.contact-card {
+    background: #f4f1ea;
+    color: #111;
+    border-radius: 28px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    min-width: 130px;
+    justify-content: flex-end;
+    gap: 12px;
 }
 
-.actions a,
+.contact-card p {
+    margin: 0 0 auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #555;
+}
+
+a,
 button {
-    background: #111;
-    color: #fff;
+    color: #111;
+    background: transparent;
     border: 1px solid #111;
-    padding: 9px 12px;
-    text-align: center;
+    padding: 11px 14px;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
 }
 
-.actions a:hover,
+a:hover,
 button:hover {
-    background: #fff;
-    color: #111;
+    background: #111;
+    color: #fff;
 }
 
-section {
-    padding: 22px 0;
-    border-bottom: 1px solid #e1e1e1;
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card {
+    background: #f4f1ea;
+    color: #111;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.card.large p {
+    font-size: 18px;
 }
 
 h2 {
-    margin: 0 0 12px;
+    margin: 0 0 14px;
     font-size: 13px;
-    letter-spacing: 1.7px;
     text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #555;
 }
 
 p {
     margin: 0;
 }
 
-.intro p {
-    max-width: 760px;
-    font-size: 17px;
-}
-
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .skills span {
-    padding: 7px 10px;
     border: 1px solid #111;
+    border-radius: 999px;
+    padding: 9px 13px;
     font-size: 14px;
-    background: #fff;
 }
 
-.project {
+.projects {
+    background: #111;
+    border: 1px solid #2b2b2b;
+    border-radius: 28px;
+    padding: 30px;
+    margin: 24px 0;
+}
+
+.projects h2 {
+    color: #bdbdbd;
+}
+
+.project-card {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 28px;
-    padding: 16px 0;
-    border-top: 1px solid #eee;
+    grid-template-columns: 310px 1fr;
+    gap: 32px;
+    background: #f4f1ea;
+    color: #111;
+    border-radius: 22px;
+    padding: 24px;
+    margin-top: 16px;
 }
 
-.project:first-of-type {
-    border-top: none;
-    padding-top: 0;
+.number {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 14px;
 }
 
 h3 {
-    margin: 0 0 4px;
-    font-size: 18px;
+    margin: 0 0 6px;
+    font-size: 22px;
+    letter-spacing: -0.5px;
 }
 
 .meta {
-    font-size: 13px;
     color: #666;
+    font-size: 14px;
 }
 
-.split {
+.bottom-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.dark-card {
+    background: #1a1a1a;
+    color: #f4f4f4;
+    border: 1px solid #333;
+}
+
+.dark-card h2 {
+    color: #bdbdbd;
 }
 
 footer {
-    padding-top: 18px;
-    font-size: 13px;
-    color: #555;
+    padding: 24px 4px;
+    color: #999;
+    font-size: 14px;
 }
 
-@media (max-width: 720px) {
-    .cv {
-        margin: 0;
-        padding: 24px;
-        border: none;
+@media (max-width: 850px) {
+    .site {
+        width: min(100% - 20px, 700px);
+        margin: 10px auto;
     }
 
     .hero,
-    .split {
+    .grid-layout,
+    .bottom-grid,
+    .project-card {
         grid-template-columns: 1fr;
-        display: grid;
+    }
+
+    .hero-text {
+        padding: 34px 26px;
+        border-radius: 22px;
     }
 
     h1 {
-        font-size: 42px;
+        letter-spacing: -3px;
     }
 
-    .project {
-        grid-template-columns: 1fr;
-        gap: 8px;
+    .subtitle {
+        font-size: 18px;
     }
 
-    .actions {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .contact-card,
+    .card,
+    .projects,
+    .project-card {
+        border-radius: 20px;
+        padding: 24px;
+    }
+
+    .contact-card {
+        gap: 10px;
+    }
+
+    a,
+    button {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 }
 
 @media print {
     body {
         background: #fff;
+        color: #111;
     }
 
-    .cv {
+    .site {
+        width: 100%;
         margin: 0;
-        border: none;
+    }
+
+    .hero-text,
+    .projects,
+    .dark-card {
+        background: #fff;
+        color: #111;
+        border: 1px solid #ccc;
+    }
+
+    .card,
+    .contact-card,
+    .project-card {
+        background: #fff;
+        color: #111;
+        border: 1px solid #ccc;
     }
 
     button {
         display: none;
-    }
-
-    .actions a {
-        background: #fff;
-        color: #111;
     }
 }
