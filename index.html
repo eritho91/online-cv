@@ -3,93 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erik Thorell | Online-CV</title>
+    <title>Erik Thorell | Javautvecklare</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<main class="page">
-    <header class="top">
+<main class="cv">
+    <header class="hero">
         <div>
-            <p class="label">Online-CV</p>
+            <p class="eyebrow">Online-CV · LIA</p>
             <h1>Erik Thorell</h1>
-            <p class="title">Javautvecklare-student | Söker LIA inom backend</p>
+            <p class="subtitle">Javautvecklare-student med fokus på backend, Spring Boot och REST API:er.</p>
         </div>
 
-        <div class="contact">
-            <p><a href="mailto:erikgthorell@gmail.com">erikgthorell@gmail.com</a></p>
-            <p><a href="https://github.com/eritho91" target="_blank">github.com/eritho91</a></p>
-            <button id="printButton">Skriv ut CV</button>
+        <div class="actions">
+            <a href="mailto:erikgthorell@gmail.com">E-post</a>
+            <a href="https://github.com/eritho91" target="_blank">GitHub</a>
+            <button id="printButton">Skriv ut</button>
         </div>
     </header>
 
-    <section>
+    <section class="intro">
         <h2>Profil</h2>
         <p>
-            Jag studerar till Javautvecklare och söker LIA där jag får utvecklas inom backend,
-            Java, Spring Boot, REST API:er och databaser. Jag är noggrann, nyfiken och tycker om
-            att förstå hur ett system hänger ihop från controller till databas och externa tjänster.
+            Jag söker LIA inom backendutveckling. Jag vill arbeta med Java, Spring Boot,
+            databaser, REST API:er och system där flera delar kommunicerar med varandra.
+            Min styrka är att jag vill förstå hela flödet: från request till controller,
+            service, databas och externa tjänster.
         </p>
     </section>
 
     <section>
-        <h2>Tekniska kunskaper</h2>
-
-        <div class="grid">
-            <p><strong>Språk:</strong> Java, HTML, CSS, JavaScript</p>
-            <p><strong>Backend:</strong> Spring Boot, REST, JPA, Hibernate</p>
-            <p><strong>Databaser:</strong> MySQL, PostgreSQL, H2, MongoDB</p>
-            <p><strong>Verktyg:</strong> Git, GitHub, Maven, Docker, IntelliJ IDEA</p>
-            <p><strong>Säkerhet:</strong> JWT, Spring Security, roller</p>
-            <p><strong>Test:</strong> JUnit, MockMvc, H2-testdatabas</p>
+        <h2>Teknik</h2>
+        <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST</span>
+            <span>JPA</span>
+            <span>Hibernate</span>
+            <span>MySQL</span>
+            <span>PostgreSQL</span>
+            <span>MongoDB</span>
+            <span>JWT</span>
+            <span>Spring Security</span>
+            <span>JUnit</span>
+            <span>MockMvc</span>
+            <span>Docker</span>
+            <span>GitHub</span>
         </div>
     </section>
 
     <section>
         <h2>Projekt</h2>
 
-        <article>
-            <h3>Webshop med mikrotjänster</h3>
+        <div class="project">
+            <div>
+                <h3>Webshop med mikrotjänster</h3>
+                <p class="meta">Java · Spring Boot · JWT · REST · RabbitMQ</p>
+            </div>
             <p>
-                Backendprojekt med auth-server, product-service, order-service och email-service.
-                Jag har arbetat med order-service, JWT-skydd, REST-anrop till product-service,
-                orderhantering och meddelandekö till email-service.
+                Backendprojekt uppdelat i auth-server, product-service, order-service och
+                email-service. Jag har arbetat med order-service, JWT-skyddade endpoints,
+                REST-anrop till product-service och meddelanden till email-service.
             </p>
-        </article>
+        </div>
 
-        <article>
-            <h3>REST-webshop</h3>
+        <div class="project">
+            <div>
+                <h3>REST-webshop</h3>
+                <p class="meta">Java · Spring Boot · Databas · Säkerhet</p>
+            </div>
             <p>
-                En webshop byggd med Spring Boot där fokus ligger på användare, produkter,
-                REST-endpoints, databaskoppling och JWT-baserad autentisering.
+                Övningsprojekt med användare, produkter, controllers, serviceklasser,
+                repositories och JWT-baserad autentisering.
             </p>
-        </article>
+        </div>
 
-        <article>
-            <h3>Java- och databasprojekt</h3>
+        <div class="project">
+            <div>
+                <h3>Java- och databasprojekt</h3>
+                <p class="meta">Java · CRUD · SQL · MongoDB</p>
+            </div>
             <p>
-                Skolprojekt där jag har tränat på objektorientering, CRUD, repositories,
-                serviceklasser, controllers och koppling till databaser.
+                Mindre skolprojekt där jag har tränat på objektorientering, databaslogik,
+                CRUD, MVC-liknande struktur och koppling mellan Java och databaser.
             </p>
-        </article>
+        </div>
     </section>
 
-    <section>
-        <h2>Utbildning</h2>
-        <p>
-            <strong>Javautvecklare, IT-Högskolan</strong><br>
-            Utbildningen innehåller Java, objektorienterad programmering, databaser,
-            webbutveckling, Spring Boot, testning och systemutveckling.
-        </p>
+    <section class="split">
+        <div>
+            <h2>Utbildning</h2>
+            <p>
+                <strong>Javautvecklare</strong><br>
+                IT-Högskolan
+            </p>
+        </div>
+
+        <div>
+            <h2>Söker</h2>
+            <p>
+                LIA inom backend, Java, Spring Boot, REST API:er, databaser,
+                mikrotjänster eller molnbaserad drift.
+            </p>
+        </div>
     </section>
 
-    <section>
-        <h2>Jag söker</h2>
-        <p>
-            Jag söker LIA inom backendutveckling, gärna med Java, Spring Boot, REST API:er,
-            databaser, mikrotjänster eller molnbaserad drift.
-        </p>
-    </section>
+    <footer>
+        <p>erikgthorell@gmail.com · github.com/eritho91</p>
+    </footer>
 </main>
 
 <script src="script.js"></script>
