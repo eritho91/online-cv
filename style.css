@@ -4,121 +4,161 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #222;
+    background: #eeeeee;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.45;
 }
 
-body.dark {
-    background-color: #111827;
-    color: #f9fafb;
+.page {
+    max-width: 850px;
+    margin: 32px auto;
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #111111;
 }
 
-.hero {
-    background: linear-gradient(135deg, #1f2937, #374151);
-    color: white;
-    padding: 24px;
-}
-
-nav {
-    max-width: 1000px;
-    margin: 0 auto;
+.top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 24px;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-nav h1 {
+.label {
+    margin: 0 0 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
     margin: 0;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: -1.5px;
 }
 
-button,
-.button {
-    border: none;
-    background-color: #2563eb;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
+.title {
+    margin: 10px 0 0;
+    font-size: 16px;
 }
 
-button:hover,
-.button:hover {
-    background-color: #1d4ed8;
+.contact {
+    text-align: right;
+    font-size: 14px;
 }
 
-.hero-content {
-    max-width: 1000px;
-    margin: 70px auto;
-}
-
-.hero-content h2 {
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.hero-content p {
-    max-width: 700px;
-    font-size: 18px;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 32px 20px;
+.contact p {
+    margin: 0 0 7px;
 }
 
 section {
-    background-color: white;
-    margin-bottom: 24px;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
-body.dark section {
-    background-color: #1f2937;
+section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.cards {
+h2 {
+    margin: 0 0 9px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    margin: 12px 0 4px;
+    font-size: 17px;
+}
+
+p {
+    margin: 0 0 8px;
+}
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 28px;
 }
 
-.cards article,
-.project {
-    border-left: 4px solid #2563eb;
-    padding-left: 16px;
+article {
+    margin-bottom: 10px;
 }
 
 a {
-    color: #2563eb;
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px solid #111111;
 }
 
-body.dark a {
-    color: #93c5fd;
+a:hover {
+    background: #111111;
+    color: #ffffff;
 }
 
-footer {
-    text-align: center;
-    padding: 24px;
+button {
+    margin-top: 8px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #111111;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #111111;
 }
 
 @media (max-width: 700px) {
-    nav {
+    .page {
+        margin: 0;
+        padding: 24px;
+        border: none;
+    }
+
+    .top {
         flex-direction: column;
-        gap: 16px;
     }
 
-    .hero-content h2 {
-        font-size: 30px;
+    .contact {
+        text-align: left;
     }
 
-    .cards {
+    .grid {
         grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}
+
+@media print {
+    body {
+        background: #ffffff;
+    }
+
+    .page {
+        margin: 0;
+        border: none;
+        padding: 20px;
+    }
+
+    button {
+        display: none;
+    }
+
+    a {
+        border-bottom: none;
     }
 }
