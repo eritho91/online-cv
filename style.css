@@ -7,15 +7,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 60px 20px;
-    opacity: 0; /* För fade-in effekten */
-    transition: opacity 0.8s ease-in;
 }
-
-body.fade-in { opacity: 1; }
 
 .container { max-width: 700px; margin: 0 auto; }
 
-/* --- Header --- */
+/* ... Resten av din CSS är oförändrad ... */
 .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
 
@@ -32,11 +28,9 @@ h1 { font-size: 32px; margin: 0; letter-spacing: -1px; }
 }
 .links a:hover { border-bottom: 1px solid #1a1a1a; }
 
-/* --- Sections --- */
 section { margin-bottom: 50px; }
 h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 15px; }
 
-/* --- Projects --- */
 .project-item { margin-bottom: 30px; }
 .project-item h3 { margin: 0 0 5px 0; font-size: 18px; }
 .project-item p { margin: 0 0 10px 0; color: #444; }
@@ -48,7 +42,6 @@ h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #99
     border-bottom: 1px solid #000;
 }
 
-/* --- Print Button --- */
 .print-btn { 
     position: fixed; 
     bottom: 30px; 
@@ -63,7 +56,6 @@ h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #99
 }
 .print-btn:hover { background: #333; }
 
-/* --- Mobile view --- */
 @media (max-width: 600px) {
     .header { flex-direction: column-reverse; gap: 20px; }
     .avatar { width: 80px; height: 80px; }
