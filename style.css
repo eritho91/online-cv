@@ -11,9 +11,16 @@ body {
 
 .container { max-width: 700px; margin: 0 auto; }
 
-/* ... Resten av din CSS är oförändrad ... */
+/* --- Header --- */
 .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
-.avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+
+/* Avatar 150px enligt önskemål */
+.avatar { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
 
 h1 { font-size: 32px; margin: 0; letter-spacing: -1px; }
 .role { color: #666; font-size: 18px; margin: 5px 0 15px; }
@@ -28,9 +35,11 @@ h1 { font-size: 32px; margin: 0; letter-spacing: -1px; }
 }
 .links a:hover { border-bottom: 1px solid #1a1a1a; }
 
+/* --- Sections --- */
 section { margin-bottom: 50px; }
 h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 15px; }
 
+/* --- Projects --- */
 .project-item { margin-bottom: 30px; }
 .project-item h3 { margin: 0 0 5px 0; font-size: 18px; }
 .project-item p { margin: 0 0 10px 0; color: #444; }
@@ -42,6 +51,7 @@ h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #99
     border-bottom: 1px solid #000;
 }
 
+/* --- Print Button --- */
 .print-btn { 
     position: fixed; 
     bottom: 30px; 
@@ -56,7 +66,8 @@ h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #99
 }
 .print-btn:hover { background: #333; }
 
+/* --- Mobile Responsive --- */
 @media (max-width: 600px) {
     .header { flex-direction: column-reverse; gap: 20px; }
-    .avatar { width: 80px; height: 80px; }
+    .avatar { width: 100px; height: 100px; }
 }
