@@ -1,75 +1,61 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erik Thorell | Javautvecklare</title>
+    <title>Erik Thorell | Java Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<main class="site">
-    <header class="hero">
-        <div class="hero-text">
-            <p class="eyebrow">Online-CV · LIA-sökande v.46–22</p>
+<main class="container">
+    <header class="header">
+        <div class="profile-meta">
             <h1>Erik Thorell</h1>
-            <p class="subtitle">
-                Javautvecklare med fokus på backend, Spring Boot, REST API:er och robusta systemflöden.
-            </p>
-        </div>
-
-        <aside class="contact-card">
-            <div class="profile-img">
-                <img src="DIN_BILD_URL" alt="Erik Thorell">
+            <p class="role">Java Developer | Seeking LIA Internship (v.46–22)</p>
+            <div class="links">
+                <a href="mailto:erikgthorell@gmail.com">erikgthorell@gmail.com</a>
+                <a href="https://github.com/eritho91" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/erikgthorell/" target="_blank">LinkedIn</a>
             </div>
-            <a href="mailto:erikgthorell@gmail.com">erikgthorell@gmail.com</a>
-            <a href="https://github.com/eritho91" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/erikgthorell/" target="_blank">LinkedIn</a>
-            <button id="printButton">Skriv ut CV</button>
-        </aside>
+        </div>
+        <!-- Update the src with your image path -->
+        <img src="DIN_BILD_URL" alt="Erik Thorell" class="avatar">
     </header>
 
-    <section class="grid-layout">
-        <article class="card large">
-            <h2>Profil</h2>
-            <p>Javautvecklare som trivs i backend-miljöer med fokus på stabila systemflöden. Jag drivs av att bygga lösningar som gör nytta i vardagen, särskilt inom infrastruktur och samhällstjänster. Har god förståelse för hela kedjan från API till databas och är van vid att arbeta strukturerat med modern verktygskedja.</p>
-        </article>
-        <article class="card">
-            <h2>Teknisk stack</h2>
-            <p>Java, Spring Boot, JPA/Hibernate, SQL (MySQL/PostgreSQL), NoSQL (MongoDB), Docker, REST, JWT, JUnit, Maven.</p>
-        </article>
+    <section>
+        <h2>Profile</h2>
+        <p>Java Developer focused on backend architecture, Spring Boot, and robust system flows. Driven by building utility-driven solutions, particularly in infrastructure and civic tech. Experienced in structured workflows with a modern tech stack.</p>
     </section>
 
-    <section class="projects">
-        <h2>Projekt</h2>
-        <article class="project-card">
-            <div>
-                <p class="number">01</p>
+    <section>
+        <h2>Tech Stack</h2>
+        <p>Java, Spring Boot, JPA/Hibernate, MySQL/PostgreSQL, Docker, REST, JWT, JUnit, Maven.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project-list">
+            <article class="project-item">
                 <h3>Rye: Cognitive Load Analyzer</h3>
-                <p class="meta">Java · Spring Boot · Web Scraping · REST</p>
-                <a href="https://rye-beta-v1.onrender.com/" target="_blank" class="project-link">Visa app</a>
-            </div>
-            <p>Analysverktyg för att kvantifiera kognitiv belastning på webbsidor. Backend-logiken bearbetar data för att mäta visuell och strukturell komplexitet genom API-integrationer och algoritmiskt databehandling.</p>
-        </article>
+                <p>A tool for analyzing the cognitive load of web pages. The backend processes data to quantify visual and structural complexity through API integrations.</p>
+                <a href="https://rye-beta-v1.onrender.com/" target="_blank">View app →</a>
+            </article>
 
-        <article class="project-card">
-            <div>
-                <p class="number">02</p>
+            <article class="project-item">
                 <h3>Shine: Time Management</h3>
-                <p class="meta">Java · Spring Boot · REST API · JWT · PostgreSQL</p>
-                <a href="https://shine-beta-v1.onrender.com/" target="_blank" class="project-link">Visa app</a>
-            </div>
-            <p>Applikation för tidshantering byggd på en ren REST-arkitektur. Implementerad med säkert användargränssnitt via JWT och robust databashantering. Fokus på CRUD-operationer och skalbar backend-design.</p>
-        </article>
+                <p>Time management application built on a clean REST architecture. Features secure JWT authentication and robust PostgreSQL data management.</p>
+                <a href="https://shine-beta-v1.onrender.com/" target="_blank">View app →</a>
+            </article>
+        </div>
     </section>
-
-    <footer>
-        <p>Erik Thorell · Söker LIA · <a href="https://www.linkedin.com/in/erikgthorell/" target="_blank">LinkedIn</a></p>
-    </footer>
 </main>
+
+<button id="printButton" class="print-btn">Save as PDF</button>
 
 <script>
     document.getElementById("printButton").addEventListener("click", () => window.print());
 </script>
+
 </body>
 </html>
