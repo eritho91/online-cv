@@ -9,35 +9,19 @@ body {
 }
 
 body {
-    position: relative;
-    background: #ffffff;
-    color: #1a1a1a;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 103%;
-    line-height: 1.4;
-}
-
-body::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 390px;
-    content: "";
     background:
-        radial-gradient(
-            circle at 80% 15%,
-            rgba(255, 255, 255, 0.95),
-            transparent 35%
-        ),
         linear-gradient(
-            120deg,
+            270deg,
             #d9dde2 0%,
             #e8ebee 38%,
             #f4f5f6 72%,
             #ffffff 100%
-        );
+        ) top / 100% 390px no-repeat,
+        #ffffff;
+    color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 103%;
+    line-height: 1.4;
 }
 
 .container {
@@ -219,8 +203,16 @@ h2 {
 }
 
 @media (max-width: 850px) {
-    body::before {
-        height: 540px;
+    body {
+        background:
+            linear-gradient(
+                270deg,
+                #d9dde2 0%,
+                #e8ebee 38%,
+                #f4f5f6 72%,
+                #ffffff 100%
+            ) top / 100% 540px no-repeat,
+            #ffffff;
     }
 
     .container {
@@ -250,8 +242,16 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    body::before {
-        height: 590px;
+    body {
+        background:
+            linear-gradient(
+                270deg,
+                #d9dde2 0%,
+                #e8ebee 38%,
+                #f4f5f6 72%,
+                #ffffff 100%
+            ) top / 100% 590px no-repeat,
+            #ffffff;
     }
 
     .container {
@@ -286,8 +286,8 @@ h2 {
 }
 
 @media print {
-    body::before {
-        display: none;
+    body {
+        background: #ffffff;
     }
 
     .container {
@@ -299,6 +299,7 @@ h2 {
         background: #f2f2f2;
         box-shadow: none;
         backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     .print-btn {
