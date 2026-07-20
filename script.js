@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Print-funktionalitet
-    const printBtn = document.getElementById("printButton");
-    if (printBtn) {
-        printBtn.addEventListener("click", () => {
+    const printButton = document.getElementById("printButton");
+
+    if (printButton) {
+        printButton.addEventListener("click", () => {
             window.print();
         });
     }
