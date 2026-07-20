@@ -1,4 +1,3 @@
-Byt ut hela `style.css` mot denna. Länkarna ligger i bredd, gradienten är kvar och bilden är cirka 15 % större.
 
 ```css
 * {
@@ -15,6 +14,7 @@ body {
     background: #ffffff;
     color: #1a1a1a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 103%;
     line-height: 1.4;
 }
 
@@ -26,17 +26,18 @@ body {
 
 .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(0, 1fr) 290px;
     gap: 45px;
     align-items: center;
-    min-height: 320px;
+    min-height: 300px;
     margin-bottom: 32px;
     padding: 34px 46px;
     border-radius: 18px;
     background: linear-gradient(
         110deg,
-        #e9e9e9 0%,
-        #f3f3f3 48%,
+        #dedede 0%,
+        #eeeeee 40%,
+        #f8f8f8 72%,
         #ffffff 100%
     );
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
@@ -48,7 +49,7 @@ body {
 
 .hero-left h1 {
     margin: 0;
-    font-size: 42px;
+    font-size: 43.3px;
     line-height: 1.05;
     letter-spacing: -1.5px;
 }
@@ -56,14 +57,14 @@ body {
 .role {
     margin: 7px 0 13px;
     color: #666666;
-    font-size: 19px;
+    font-size: 19.6px;
 }
 
 .profile-text {
     max-width: 620px;
     margin: 0;
     color: #444444;
-    font-size: 14px;
+    font-size: 14.4px;
     line-height: 1.45;
 }
 
@@ -80,7 +81,7 @@ body {
     display: inline-block;
     width: auto;
     color: #1a1a1a;
-    font-size: 13px;
+    font-size: 13.4px;
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
@@ -99,8 +100,8 @@ body {
 }
 
 .avatar {
-    width: 276px;
-    height: 276px;
+    width: 248px;
+    height: 248px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
@@ -116,7 +117,7 @@ body {
 h2 {
     margin: 0 0 14px;
     color: #999999;
-    font-size: 11px;
+    font-size: 11.3px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -131,7 +132,7 @@ h2 {
 
 .tech-list li {
     color: #444444;
-    font-size: 13px;
+    font-size: 13.4px;
 }
 
 .projects {
@@ -148,7 +149,7 @@ h2 {
 
 .project-item h3 {
     margin: 0 0 4px;
-    font-size: 17px;
+    font-size: 17.5px;
     line-height: 1.25;
 }
 
@@ -156,13 +157,13 @@ h2 {
     max-width: 690px;
     margin: 0 0 7px;
     color: #444444;
-    font-size: 13px;
+    font-size: 13.4px;
     line-height: 1.4;
 }
 
 .project-item a {
     color: #111111;
-    font-size: 13px;
+    font-size: 13.4px;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid #111111;
@@ -181,7 +182,7 @@ h2 {
     border-radius: 999px;
     background: #111111;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 12.4px;
     cursor: pointer;
 }
 
@@ -206,8 +207,8 @@ h2 {
     }
 
     .avatar {
-        width: 190px;
-        height: 190px;
+        width: 171px;
+        height: 171px;
     }
 
     .content {
@@ -226,12 +227,12 @@ h2 {
     }
 
     .hero-left h1 {
-        font-size: 34px;
+        font-size: 35px;
     }
 
     .avatar {
-        width: 160px;
-        height: 160px;
+        width: 144px;
+        height: 144px;
     }
 
     .links {
