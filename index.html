@@ -9,59 +9,142 @@
 <body>
 
 <main class="container">
-    <header class="header">
-        <div class="profile-meta">
+
+    <section class="hero-card">
+
+        <div class="hero-text">
             <h1>Erik Thorell</h1>
-            <p class="role">Java Developer | Seeking LIA Internship (v.46–22)</p>
+            <p class="role">Java Developer</p>
+
+            <p class="intro">
+                Java developer specializing in backend development with Spring Boot,
+                REST APIs and secure system architecture. I enjoy building practical,
+                scalable applications while continuously expanding my knowledge of
+                modern Java technologies and cloud platforms.
+            </p>
+
             <div class="links">
-                <a href="mailto:erikgthorell@gmail.com">erikgthorell@gmail.com</a>
-                <a href="https://github.com/eritho91" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/erikgthorell/" target="_blank">LinkedIn</a>
+                <a href="mailto:erikgthorell@gmail.com">Email</a>
+
+                <a href="https://github.com/eritho91" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/erikgthorell/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="Erik_Thorell_CV.pdf" target="_blank">
+                    PDF CV
+                </a>
             </div>
         </div>
-        <!-- Update the src with your image path -->
-        <img src="https://i.ibb.co/rfNFdkwR/P1010322-kopia-2.jpg" alt="Erik Thorell" class="avatar">
-    </header>
 
-    <section>
-        <h2>Profile</h2>
-        <p>Java Developer focused on backend architecture, Spring Boot, and robust system flows. Driven by building utility-driven solutions, particularly in infrastructure and civic tech. Experienced in structured workflows with a modern tech stack.</p>
+        <img
+                src="https://i.ibb.co/rfNFdkwR/P1010322-kopia-2.jpg"
+                alt="Erik Thorell"
+                class="avatar">
+
     </section>
 
-    <section>
-        <h2>Tech Stack</h2>
-        <p>Java, Spring Boot, JPA/Hibernate, MySQL/PostgreSQL, Docker, REST, JWT, JUnit, Maven.</p>
-    </section>
+    <section class="content-grid">
 
-    <section>
-        <h2>Projects</h2>
-        <div class="project-list">
-            <article class="project-item">
-                <h3>Rye: Cognitive Load Analyzer</h3>
-                <p>A tool for analyzing the cognitive load of web pages. The backend processes data to quantify visual and structural complexity through API integrations.</p>
-                <a href="https://rye-beta-v1.onrender.com/" target="_blank">View app →</a>
-            </article>
+        <div class="left-column">
 
-            <article class="project-item">
-            <h3>Nexus: Employee Portal</h3>
-            <p>A backend-focused REST API for an employee management system. Built with Spring Boot, JWT authentication, PostgreSQL and JPA. Includes role-based access control, employee management, shift scheduling and OpenAPI documentation.</p>
-            <a href="https://gastric-valencia-klerk-4f003058.koyeb.app/swagger-ui/index.html" target="_blank">View API →</a>
-        </article>
+            <h2>Tech Stack</h2>
 
-            <article class="project-item">
-                <h3>Shine: Time Management</h3>
-                <p>Time management application built on a clean REST architecture. Features secure JWT authentication and robust PostgreSQL data management.</p>
-                <a href="https://shine-beta-v1.onrender.com/" target="_blank">View app →</a>
-            </article>
+            <ul class="tech-list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>REST API</li>
+                <li>JWT</li>
+                <li>JPA / Hibernate</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Maven</li>
+                <li>JUnit</li>
+                <li>Git & GitHub</li>
+                <li>Render</li>
+                <li>OpenAPI / Swagger</li>
+            </ul>
+
         </div>
+
+        <div class="right-column">
+
+            <h2>Projects</h2>
+
+            <div class="project-list">
+
+                <article class="project-item">
+
+                    <h3>Nexus: Employee Portal</h3>
+
+                    <p>
+                        A backend-focused REST API for an employee management
+                        system. Built with Spring Boot, Spring Security,
+                        JWT authentication, PostgreSQL and JPA.
+                        Includes role-based access control, employee
+                        management, shift scheduling and OpenAPI
+                        documentation.
+                    </p>
+
+                    <a href="https://gastric-valencia-klerk-4f003058.koyeb.app/swagger-ui/index.html"
+                       target="_blank">
+                        View API →
+                    </a>
+
+                </article>
+
+                <article class="project-item">
+
+                    <h3>Rye: Cognitive Load Analyzer</h3>
+
+                    <p>
+                        An accessibility-focused application that analyzes the
+                        cognitive load of web pages through backend processing
+                        and API integrations.
+                    </p>
+
+                    <a href="https://rye-beta-v1.onrender.com/"
+                       target="_blank">
+                        View App →
+                    </a>
+
+                </article>
+
+                <article class="project-item">
+
+                    <h3>Shine: Time Management</h3>
+
+                    <p>
+                        A REST-based productivity application focused on secure
+                        authentication, task management and PostgreSQL-backed
+                        persistence.
+                    </p>
+
+                    <a href="https://shine-beta-v1.onrender.com/"
+                       target="_blank">
+                        View App →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
     </section>
+
 </main>
 
-<button id="printButton" class="print-btn">Save as PDF</button>
+<button id="printButton" class="print-btn">
+    Save as PDF
+</button>
 
-<script>
-    document.getElementById("printButton").addEventListener("click", () => window.print());
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
